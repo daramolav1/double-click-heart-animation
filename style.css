@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.love {
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  width: 300px;
+  height: 450px;
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-image: url("https://images.pexels.com/photos/5695626/pexels-photo-5695626.jpeg?cs=srgb&dl=pexels-uncoveredlens-5695626.jpg&fm=jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.love .fa-heart {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  animation: grow 0.6s linear;
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
